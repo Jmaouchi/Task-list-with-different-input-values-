@@ -1,0 +1,51 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  background-color: rgb(230, 221, 215);
+}
+
+body .container{
+  padding: 35px;
+  box-shadow: 0 5px 15px rgb(189, 115, 115);
+  margin-bottom: 35px;
+  margin-top: 25px;
+  text-transform: lowercase;
+}
+
+body .header {
+  align-items: center;
+  text-align: center;
+}
+
+.heading h1{
+  font-size: 20px;
+  align-items: center;
+}
+
+.logo img{
+  animation:spin 4s linear infinite;
+  border-radius: 100px;
+}
+
+#main{
+  margin-bottom: 50px;
+}
+
+@-moz-keyframes spin { 
+  100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+  100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+  100% { 
+      -webkit-transform: rotate(360deg); 
+      transform:rotate(360deg); 
+  } 
+}
+
+#input-field-one::placeholder,#input-field-one::placeholder,#input-field-two::placeholder,#input-field-three::placeholder, #filter::placeholder{
+  color: black;
+}
